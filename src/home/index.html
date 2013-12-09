@@ -136,19 +136,25 @@
                                     <td align=middle width=86 height=56>
                                         <A title="屌丝的福利" 
                                             href="#" 
-                                            onclick="onYellow();return false;"
+                                            onclick="onYellow('image');return false;"
                                             target=_blank>
                                         <IMG height=56 src="images/xx1001.gif" width=82 border=0></A>
                                     </td>
                                     <td align=middle width=87 height=56>
-                                         <A title='美丽少女被猥琐男下药致昏迷' href="images/home/sleepgirl.jpg" target=_blank>
-                                        <IMG src="images/home/sleepgirl.jpg" border=0 width="100%" height="100%"></A>
+                                        <A title='美丽少女被猥琐男下药致昏迷' href="images/home/sleepgirl.jpg" target=_blank>
+                                            <IMG src="images/home/sleepgirl.jpg" border=0 width="100%" height="100%">
+                                        </A>
                                     </td>
                                     <td width=37 height=56>¡¡</td>
                                 </tr>
                                 <tr>
                                     <td width=27>¡¡</td>
-                                    <td align=middle width=86><A title='不过点我不一定好用' href="#" target=_blank>我有右边的视频</A></td>
+                                    <td align=middle width=86>
+                                        <A title='不过点我不一定好用' 
+                                            href="#" 
+                                            onclick="onYellow('text');return false;" 
+                                            target=_blank>我有右边的视频种子哦</A>
+                                    </td>
                                     <td align=middle width=87><A title='点击查看大图' href="images/home/sleepgirl.jpg" target=_blank>
                                         <FONT color=#cc0066>果然还是搞个色情网站比较好</FONT>
                                     </A>
@@ -319,7 +325,7 @@
                                     <object type="application/x-shockwave-flash" data="dewplayer-playlist.swf" width="240" height="200" id="dewplayer" name="dewplayer">
                                     <param name="wmode" value="transparent" />
                                     <param name="movie" value="dewplayer-playlist.swf" />
-                                    <param name="flashvars" value="showtime=true&autostart=true&autoreplay=true&xml=playlist.xml" />
+                                    <param name="flashvars" value="showtime=true&autostart=true&autoreplay=false&xml=playlist.xml" />
                                     </object>
 
                                 </td>
@@ -335,11 +341,16 @@
 
 
 <script text="javascript">
-    function onYellow()
+    function onYellow(str_type)
     {
+        if (str_type == 'text') 
+        {
+            alert("要点击上面的图片才行啊。")
+            return;
+        }
        if (confirm('Are you sure you want to go to an yellow website?')) {
             // Save it!
-            alert("wait my login page,please");
+            alert("wait my login mudule page,please");
             // window.open('http://x1.sha7.info/index.php?u=212714&vcencode=2020134618','_blank');
         } else {
             // Do nothing!
